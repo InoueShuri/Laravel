@@ -8,6 +8,6 @@
         <title>MyNews</title>
     </head>
     <body>
-        <h1 align="center"><font color="orange">EDIT ACTION</font></h1>
+        <h1 align="center"><font color="orange">PROFILE EDIT</font></h1>
     </body>
 </html>

@@ -8,6 +8,6 @@
         <title>MyNews</title>
     </head>
     <body>
-        <h1 align="center"><font color="orangered">ADD ACTION</font></h1>
+        <h1 align="center"><font color="orangered">PROFILE CREATE</font></h1>
     </body>
 </html>
