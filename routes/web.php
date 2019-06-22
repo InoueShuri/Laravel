@@ -16,18 +16,11 @@ Route::get('/', function () {
 });
 
 
-/*========================================================================
-課題３はこちらにコメントの形で提出します。OKであれば次回提出の時には消します。
-
-http://XXXXXX.jp/XXX というアクセスが来たときに
-AAAControllerのbbbというAction に渡すRoutingの設定」を書いてみてください。
-
-Route::get('XXX', 'YYY(Controllerディレクトリ名)\AAAController@bbb');
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~*/
-
-
 Route::group(['prefix' => 'admin'], function() {
-    Route::get('news/create','Admin\NewsController@add');
-    Route::get('profile/create','Admin\ProfileController@add');
-    Route::get('profile/edit','Admin\ProfileController@edit');
+    Route::get('news/create','Admin\NewsController@add')->middleware('auth');
+    Route::get('profile/create','Admin\ProfileController@add')->middleware('auth');
+    Route::get('profile/edit','Admin\ProfileController@edit')->middleware('auth');
 });
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

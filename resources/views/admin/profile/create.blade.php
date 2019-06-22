@@ -10,7 +10,7 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8 mx-auto">
-                <h2>My Profile</h2>
+                <h2>Profile Create</h2>
             </div>
         </div>
     </div>
