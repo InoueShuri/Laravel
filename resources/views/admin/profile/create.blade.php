@@ -30,7 +30,7 @@
                         <label class="col-md-2" for="gender">性別</label>
                         <div class="col-md-10">
                             <input type="checkbox" name="gender" value="男性">男性
-                            <input type="checkbox" name="gender" value="男性">女性
+                            <input type="checkbox" name="gender" value="女性">女性
                         </div>
                     </div>
                     
